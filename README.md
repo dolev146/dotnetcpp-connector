@@ -37,13 +37,13 @@ g++ --version
 6. clone the repository
 
 ```
-git clone
+git clone 
 ```
 
 7. go to the repository folder
 
 ```
-cd
+cd tommyngo
 ```
 
 8. compile the code
@@ -60,21 +60,32 @@ the build.bat just run the following command known from linux
 10. move the dll to the C# project folder
 
 ```
-move MyLibrary.dll ../CSharpProject
+move MyLibrary.dll ./DllTest
 ```
 11. cd to the C# project folder
 
 ```
-cd ../CSharpProject
+cd ./DllTest
 ```
 
-12. run the C# project
+12. install dotnet NuGet packages
 
+```
+dotnet restore
+```
+
+13. build
+
+```
+dotnet build
+```
+
+14. run
 ```
 dotnet run
 ```
 
-vuala, the C# project is running with the c++ dll! 
+and Vuala!, the C# project is running with the c++ dll! 
 
 
 my system info:
